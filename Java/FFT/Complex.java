@@ -40,6 +40,11 @@ public class Complex {
         im = imag;
     }
 
+    public Complex() {
+        re = 0;
+        im = 0;
+    }
+
     // return a string representation of the invoking Complex object
     public String toString() {
         if (im == 0) return re + "";
@@ -150,5 +155,5 @@ public class Complex {
     public int hashCode() {
         return Objects.hash(re, im);
     }
-
+}
   
